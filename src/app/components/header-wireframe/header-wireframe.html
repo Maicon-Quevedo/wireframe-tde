@@ -1,0 +1,14 @@
+<header class='fundo-header'>
+    <div class='div-titulo'>
+        <h1 class='titulo'>{{ nomeNegocio }}</h1>
+    </div>
+    <div class='topicos'>
+        <div class='topico-selecionado'><p>
+                {{ topicoUm }}
+            </p>
+        </div>
+        @for (item of nome; track item){
+            <p class='topico'>{{ item }}</p>
+        }
+    </div>
+</header>

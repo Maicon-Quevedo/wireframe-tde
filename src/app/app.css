@@ -1,0 +1,18 @@
+main{
+    padding-left: 50px;
+}
+
+.subtitulo{
+    color: gray;
+}
+
+.titulo-topico{
+    margin-top: 50px;
+}
+
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+}
