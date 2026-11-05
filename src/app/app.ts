@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderWireframe } from './components/header-wireframe/header-wireframe';
 import { TabelaTransacoes } from './components/tabela-transacoes/tabela-transacoes';
-import { FooterWireframe } from './footer-wireframe/footer-wireframe';
+import { FooterWireframe } from './components/footer-wireframe/footer-wireframe';
 
 @Component({
   selector: 'app-root',
