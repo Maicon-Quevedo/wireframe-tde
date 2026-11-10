@@ -2,6 +2,40 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.28.
 
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/) (LTS version recommended). Angular 21 requires Node `^20.19.0`, `^22.12.0` or `^24.0.0`. npm comes bundled with Node.js.
+
+You can check your installed versions with:
+
+```bash
+node -v
+npm -v
+```
+
+The Angular CLI (`ng` command) is optional. To install it globally, run:
+
+```bash
+npm install -g @angular/cli
+```
+
+If you prefer not to install it globally, you can prefix the commands below with `npx` (for example, `npx ng serve`).
+
+## Getting started
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/Maicon-Quevedo/wireframe-tde.git
+cd wireframe-tde
+npm install
+```
+
+The `npm install` step is required the first time on any new machine, since the `node_modules` folder is not versioned.
+
 ## Development server
 
 To start a local development server, run:
