@@ -10,9 +10,9 @@
         <tbody>
             @for (data of datas; track $index){
                 <tr>
-                    <td>{{ data }}</td>
+                    <td>{{ data | date:'dd/MM/yyyy' }}</td>
                     <td>{{ tipos[$index] }}</td>
-                    <td>{{ valores[$index] }}</td>
+                    <td>{{ valores[$index] | currency:'BRL' }}</td>
                 </tr>
             }
         </tbody>

@@ -1,8 +1,9 @@
+import { CurrencyPipe, DatePipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tabela-transacoes',
-  imports: [],
+  imports: [CurrencyPipe, DatePipe],
   templateUrl: './tabela-transacoes.html',
   styleUrl: './tabela-transacoes.css',
 })
