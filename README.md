@@ -1,93 +1,67 @@
-# ProjetoWireframe
+# Wireframe TDE
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.28.
+Wireframe de uma tela de **últimas transações**, desenvolvido em Angular. A página exibe uma tabela com as movimentações mais recentes (30 registros, exibindo os 10 primeiros), ordenadas da mais recente para a mais antiga.
 
-## Prerequisites
+## Funcionalidades
 
-Before running the project, make sure you have the following installed:
+- Cabeçalho e rodapé reutilizáveis (componentes próprios)
+- Tabela de transações com colunas de data, tipo e valor
+- Estrutura de headings semântica (`h1` > `h2`)
+- Cores com contraste adequado, seguindo as recomendações de acessibilidade do Lighthouse
 
-- [Git](https://git-scm.com/downloads)
-- [Node.js](https://nodejs.org/) (LTS version recommended). Angular 21 requires Node `^20.19.0`, `^22.12.0` or `^24.0.0`. npm comes bundled with Node.js.
+## Tecnologias
 
-You can check your installed versions with:
+- [Angular](https://angular.dev/) 21
+- TypeScript
+- HTML e CSS
+- [Vitest](https://vitest.dev/) para testes unitários
 
-```bash
-node -v
-npm -v
+## Estrutura do projeto
+
+```
+src/app/
+├── app.html                    # Template principal
+├── app.css                     # Estilos da página
+├── app-header-wireframe/       # Componente do cabeçalho
+├── app-footer-wireframe/       # Componente do rodapé
+└── app-tabela-transacoes/      # Componente da tabela de transações
 ```
 
-The Angular CLI (`ng` command) is optional. To install it globally, run:
+> Os nomes das pastas podem variar conforme a organização atual do projeto.
+
+## Como rodar
+
+**Pré-requisitos:** [Node.js](https://nodejs.org/) e npm instalados.
 
 ```bash
-npm install -g @angular/cli
-```
-
-If you prefer not to install it globally, you can prefix the commands below with `npx` (for example, `npx ng serve`).
-
-## Getting started
-
-Clone the repository and install the dependencies:
-
-```bash
+# clonar o repositório
 git clone https://github.com/Maicon-Quevedo/wireframe-tde.git
 cd wireframe-tde
+
+# instalar as dependências
 npm install
-```
 
-The `npm install` step is required the first time on any new machine, since the `node_modules` folder is not versioned.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
+# iniciar o servidor de desenvolvimento
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois, acesse `http://localhost:4200/` no navegador. A página recarrega automaticamente a cada alteração nos arquivos.
 
-## Code scaffolding
+## Scripts úteis
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| Comando    | O que faz                                  |
+| ---------- | ------------------------------------------ |
+| `ng serve` | Inicia o servidor de desenvolvimento       |
+| `ng build` | Gera a versão de produção na pasta `dist/` |
+| `ng test`  | Executa os testes unitários com Vitest     |
 
-```bash
-ng generate component component-name
-```
+## Acessibilidade
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+O projeto foi auditado com o **Google Lighthouse**. Ajustes já aplicados:
 
-```bash
-ng generate --help
-```
+- Correção da ordem dos headings (de `h4` para `h2`, sem pular níveis)
+- Cor de `#555555` no subtítulo e no rodapé para melhorar o contraste
 
-## Building
+## Autor
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feito por [Maicon Quevedo](https://github.com/Maicon-Quevedo).
