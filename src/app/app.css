@@ -3,7 +3,7 @@ main{
 }
 
 .subtitulo{
-    color: gray;
+    color: #555555;
 }
 
 .titulo-topico{
@@ -14,5 +14,5 @@ main{
     padding: 30px;
     display: flex;
     justify-content: flex-end;
-    color: gray;
+    color: #555555;
 }
